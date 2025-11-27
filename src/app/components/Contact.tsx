@@ -41,7 +41,7 @@ export const Contact: React.FC<Props> = ({ lang }) => {
     },
     placeholders: {
       name: lang === "ru" ? "Как к вам обращаться" : "Your name",
-      email: "ip.portu.me@gmail.com",
+      email: "your@mail.com",
       subject:
         lang === "ru"
           ? "О чём вы хотите поговорить?"
