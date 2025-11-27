@@ -6,7 +6,7 @@ import type { Lang } from "../page";
 type Props = { lang: Lang };
 
 export const About: React.FC<Props> = ({ lang }) => {
-  const title = lang === "ru" ? "Обо мне" : "About Nata";
+  const title = lang === "ru" ? "Обо мне" : "About me";
 
   const lead =
     lang === "ru"
