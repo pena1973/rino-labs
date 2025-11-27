@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-
+const mail_to = String(process.env.MAIL_TO);
 export async function POST(req: Request) {
     try {
         const { name, email, message } = await req.json();
@@ -12,8 +12,9 @@ export async function POST(req: Request) {
         }
 
         const { data, error } = await resend.emails.send({
-            from: "Rino Labs Contact <onboarding@resend.dev>", // или свой домен после верификации
-            to: "твоя_почта@домен.com",                        // <- сюда тебе
+            // from: "Rino Labs Contact <lead@rino-labs.com>", // или свой домен после верификации // она платная
+            from: "Rino Labs Contact <lead@plan-track.pro>", // или свой домен после верификации            
+            to: mail_to,                       
             replyTo: email,
             subject: `Новое сообщение с сайта Rino Labs от ${name}`,
             text: `
