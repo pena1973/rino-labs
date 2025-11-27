@@ -99,7 +99,7 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                             rel="noreferrer"
                             className="btn primary projectBtn"
                         >
-                            {lang === "ru" ? "Открыть приложение" : "Open app"}
+                            {lang === "ru" ? "Подробнее" : "Learn more"}                            
                         </a>
                     </article>
 
@@ -111,9 +111,9 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                                 : "Language learning platform"}
                         </div>
                         <h3 className="projectTitle">
-                            LinguaFly —{" "}
+                            lingua-fly.com - {" "}
                             {lang === "ru"
-                                ? "новый язык легко и приятно"
+                                ? " учить новый язык легко и приятно"
                                 : "learn a new language the easy way"}
                         </h3>
                         <p className="projectText">
@@ -172,7 +172,8 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                             rel="noreferrer"
                             className="btn secondary projectBtn"
                         >
-                            {lang === "ru" ? "Подробнее" : "Learn more"}
+                             {lang === "ru" ? "Открыть " : "Open"}
+                            
                         </a>
                     </article>
                 </div>
