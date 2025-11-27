@@ -98,10 +98,10 @@ export const Contact: React.FC<Props> = ({ lang }) => {
 
   const handleChange =
     (field: keyof FormState) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-      setForm((prev) => ({ ...prev, [field]: e.target.value }));
-      setErrors((prev) => ({ ...prev, [field]: undefined }));
-    };
+      (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setForm((prev) => ({ ...prev, [field]: e.target.value }));
+        setErrors((prev) => ({ ...prev, [field]: undefined }));
+      };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -110,13 +110,25 @@ export const Contact: React.FC<Props> = ({ lang }) => {
     setStatus("sending");
 
     try {
-      // TODO: подключить реальную отправку (mailto или /api/contact)
-      await new Promise((resolve) => setTimeout(resolve, 600));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("Failed to send");
+      }
 
       setStatus("success");
       setForm(initialState);
     } catch (err) {
-      console.error(err);
+      console.error("Contact form submit error:", err);
       setStatus("idle");
       alert(text.genericError);
     }

@@ -18,15 +18,16 @@ export const Hero: React.FC<Props> = ({ lang }) => {
 
   const description =
     lang === "ru"
-      ? "Я специализируюсь на сложных SaaS-системах: производственных планировщиках, языковых платформах и кастомных бизнес-инструментах. От архитектуры и UX до backend-API, баз данных, деплоя и долгосрочной поддержки — помогаю превращать идеи в надёжные продукты."
-      : "I specialise in complex SaaS systems: production planners, language learning platforms and custom business tools. From architecture and frontend UX to backend APIs, databases, deployment and long-term support — I help turn ideas into reliable products.";
+      ? "Я специализируюсь на сложных SaaS-системах. От архитектуры и UX до backend-API, баз данных, деплоя и долгосрочной поддержки — помогаю превращать идеи в надёжные продукты."
+      : "I specialise in complex SaaS systems. From architecture and UX to backend APIs, databases, deployment and long-term support, I help turn ideas into reliable products.";
 
-  const btnPlanner = lang === "ru" ? "Открыть планировщик" : "View Planner App";
-  const btnLingua = lang === "ru" ? "Посмотреть LinguaFly" : "Explore LinguaFly";
+  const btnPlanner =
+    lang === "ru" ? "Открыть планировщик" : "View Planner app";
+  const btnLingua =
+    lang === "ru" ? "Посмотреть LinguaFly" : "Explore LinguaFly";
   const btnContact = lang === "ru" ? "Связаться со мной" : "Contact me";
 
-  const cardTitle =
-    lang === "ru" ? "Full-stack фокус" : "Full-stack focus";
+  const cardTitle = lang === "ru" ? "Full-stack фокус" : "Full-stack focus";
 
   return (
     <section className="section heroSection" aria-labelledby="hero-title">
@@ -41,24 +42,15 @@ export const Hero: React.FC<Props> = ({ lang }) => {
           <p className="heroDescription">{description}</p>
 
           <div className="heroActions">
-            {/* <a
-              href="https://www.plan-track.pro/landing"
-              target="_blank"
-              rel="noreferrer"
-              className="btn primary"
-            >
+            {/* если нужны ссылки на проекты, можно вернуть и эти кнопки */}
+            {/* 
+            <a href="#planner" className="btn primary">
               {btnPlanner}
             </a>
-
-            <a
-              href="https://www.lingua-fly.com"
-              target="_blank"
-              rel="noreferrer"
-              className="btn secondary"
-            >
+            <a href="#lingua" className="btn secondary">
               {btnLingua}
-            </a> */}
-
+            </a>
+            */}
             <a href="#contact" className="btn ghost">
               {btnContact}
             </a>
@@ -74,13 +66,8 @@ export const Hero: React.FC<Props> = ({ lang }) => {
               <li>Node.js, PostgreSQL, TypeORM</li>
               <li>
                 {lang === "ru"
-                  ? "Алгоритмы планирования и работа с часовыми поясами"
-                  : "Scheduling &amp; time-zone logic"}
-              </li>
-              <li>
-                {lang === "ru"
-                  ? "Биллинг, аналитика, локализация (i18n)"
-                  : "Billing, analytics, i18n"}
+                  ? "Опыт в IT более 20 лет"
+                  : "Over 20 years of experience in IT"}
               </li>
             </ul>
           </div>

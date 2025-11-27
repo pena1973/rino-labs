@@ -5,19 +5,19 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Rino Labs — Web developer & product creator",
   description:
-    "Rino Labs — portfolio of Nata Barinova, a full-stack web developer building production planners, language learning platforms, and complex SaaS systems from idea to production.",
+    "Rino Labs — portfolio of Natalia Barinova, a full-stack web developer building production planners, language learning platforms, and complex SaaS systems from idea to production.",
   openGraph: {
     type: "website",
     title: "Rino Labs — Web developer & product creator",
     description:
-      "Portfolio of Nata Barinova, full-stack web developer specialising in complex SaaS apps, production planning tools and language platforms.",
+      "Portfolio of Natalia Barinova, full-stack web developer specialising in complex SaaS apps, production planning tools and language platforms.",
     url: "https://rinolabs.example",
     images: [
       {
         url: "https://rinolabs.example/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Rino Labs — portfolio of Nata Barinova",
+        alt: "Rino Labs — portfolio of Natalia Barinova",
       },
     ],
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rino Labs — Web developer & product creator",
     description:
-      "Full-stack web development, production planning SaaS and language learning platforms by Nata Barinova.",
+      "Full-stack web development, production planning SaaS and language learning platforms by Natalia Barinova.",
     images: ["https://rinolabs.example/og-image.png"],
   },
 };
@@ -47,7 +47,7 @@ export default function RootLayout({
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Nata Barinova",
+    name: "Natalia Barinova",
     jobTitle: "Full-stack web developer",
     url: "https://rinolabs.example",
     worksFor: { "@id": "#rino-labs" },
@@ -75,14 +75,7 @@ export default function RootLayout({
           src="https://plausible.io/js/script.js"
           strategy="afterInteractive"
         />
-
-        <Script
-          id="jsonld-organization"
-          type="application/ld+json"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify(orgJsonLd)}
-        </Script>
+       
         <Script
           id="jsonld-person"
           type="application/ld+json"

@@ -14,8 +14,8 @@ export const Footer: React.FC<Props> = ({ lang }) => {
         <p className="footerCopy">
           © Rino Labs, {year} —{" "}
           {lang === "ru"
-            ? "портфолио Nata Barinova"
-            : "portfolio of Nata Barinova"}
+            ? "портфолио Natalia Barinova"
+            : "portfolio of Natalia Barinova"}
         </p>
         <div className="footerLinks">
           {/* TODO: заменить на реальные ссылки */}

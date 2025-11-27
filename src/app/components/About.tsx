@@ -10,13 +10,23 @@ export const About: React.FC<Props> = ({ lang }) => {
 
   const lead =
     lang === "ru"
-      ? "Я full-stack веб-разработчик, который любит создавать продуманные, человечные продукты. Мой основной стек — TypeScript, React, Next.js, Node.js и PostgreSQL."
-      : "I'm a full-stack web developer who enjoys building thoughtful, human-centered products. My main stack is TypeScript, React, Next.js, Node.js and PostgreSQL.";
+      ? `Я full-stack веб-разработчик, который любит создавать продуманные, человечные продукты. 
+      Мой основной стек — TypeScript, React, Next.js, Node.js и PostgreSQL.`
+      : `I'm a full-stack web developer who enjoys building thoughtful, human-centered products. 
+      My main stack is TypeScript, React, Next.js, Node.js and PostgreSQL.`;
 
   const text =
     lang === "ru"
-      ? "За последние годы я проектировала и запускала сложные SaaS-системы: производственные планировщики с кастомными алгоритмами планирования, приложения, работающие в разных часовых поясах и сменах, и языковые платформы с интерактивными упражнениями. Я отвечаю за архитектуру, фронтенд и бэкенд, интеграции (платежи, email, аналитика), деплой на облачные платформы вроде DigitalOcean и дальнейшую поддержку."
-      : "Over the past years I've been designing and shipping complex SaaS systems: production planners with custom scheduling algorithms, apps that work across time zones and shifts, and language learning platforms with interactive exercises. I take care of architecture, frontend and backend implementation, integrations (payments, email, analytics), deployment to cloud providers like DigitalOcean, and ongoing support.";
+      ? `За последние годы я спроектировала и разработала две сложных SaaS-системы: 
+      производственный планировщик — приложение для автоматизации планирования для производственной бригады и
+      платформу для пополнения словарного запаса для тех, кто учит язык.
+      Я делаю архитектуру, фронтенд и бэкенд, интеграции (платежи, email, аналитика), 
+      деплой на облачные платформы вроде DigitalOcean и дальнейшую поддержку и развитие продукта.`
+      : `In recent years I’ve designed and built two complex SaaS products: 
+      a production planner that automates planning for a shop-floor team, and 
+      a vocabulary-building platform for people learning a foreign language.
+      I handle architecture, frontend and backend implementation, integrations (payments, email, analytics), 
+      deployment to cloud platforms like DigitalOcean, and ongoing product support and evolution.`;
 
   return (
     <section id="about" className="section" aria-labelledby="about-title">
@@ -53,10 +63,12 @@ export const About: React.FC<Props> = ({ lang }) => {
             <div className="pillRow">
               <span className="pill">CI/CD</span>
               <span className="pill">
-                {lang === "ru" ? "Облачный деплой" : "Cloud deploy"}
+                {lang === "ru" ? "Облачный деплой" : "Cloud deployment"}
               </span>
               <span className="pill">
-                {lang === "ru" ? "Мониторинг и логирование" : "Monitoring & logging"}
+                {lang === "ru"
+                  ? "Мониторинг и логирование"
+                  : "Monitoring & logging"}
               </span>
             </div>
           </div>
@@ -65,12 +77,13 @@ export const About: React.FC<Props> = ({ lang }) => {
             <h3 className="pillGroupTitle">Product</h3>
             <div className="pillRow">
               <span className="pill">
-                {lang === "ru" ? "Продуктовый/UX-подход" : "UX thinking"}
+                {lang === "ru"
+                  ? "Продуктовый/UX-подход"
+                  : "Product & UX mindset"}
               </span>
               <span className="pill">
                 {lang === "ru" ? "Аналитика" : "Analytics"}
               </span>
-              <span className="pill">A/B tests</span>
               <span className="pill">
                 {lang === "ru" ? "Долгосрочная поддержка" : "Long-term support"}
               </span>

@@ -7,11 +7,11 @@ type Props = { lang: Lang };
 
 export const Projects: React.FC<Props> = ({ lang }) => {
     const title =
-        lang === "ru" ? "Мои авторские проекты" : "Selected projects";
+        lang === "ru" ? "Мои авторские проекты" : "My own products";
     const lead =
         lang === "ru"
             ? "Проекты в которые я вложила свои душу и знания"
-            : "A glimpse into the products I've been building recently.";
+            : "Projects I've poured my skills and heart into.";
 
     return (
         <section id="projects" className="section" aria-labelledby="projects-title">
@@ -37,57 +37,54 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                         <p className="projectText">
                             {lang === "ru"
                                 ? `Веб-приложение для планирования загрузки производственной команды/бригады. `
-                                : "A web application for planning workloads of a team, workshop or production unit. It handles operations, units, changeovers, quality control, and gives managers a clear picture of what's happening on the floor."}
+                                : "A web application for planning the workload of a production team or workshop. It manages operations, workers, units, changeovers and quality control, giving managers a clear view of what is happening on the shop floor."}
                         </p>
                         <ul className="projectList">
                             <li>
                                 {lang === "ru"
                                     ? "Помогает эффективно управлять работой производственной бригады."
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Helps manage the work of a production team or crew efficiently."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Автоматически рассчитывает план загрузки каждого работника с учетом его навыков, скорости работы и расписания"
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Automatically builds a workload plan for each worker, taking into account their skills, speed and working schedule."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? " Расчитывает кратчайший срок исполнения заказа с учетом уже запланированной загрузки каждого работника."
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Calculates the shortest possible lead time for each order, considering the current workload of every worker."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Всегда известна точная дата готовности каждого изделия заказа"
-                                    : "Statistics, logging and system health monitoring."}
+                                    : "Keeps an accurate ready date for every item in the order at all times."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Моментально отслеживает исполнение операций."
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Tracks the execution status of operations in real time."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Есть контроль качества и исправление брака."
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Includes quality control tools and rework handling."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Есть возможность использования сторонних подрядчиков"
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Supports working with external subcontractors."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Есть учет расписания работы команды и учет индивидуальных отклонений расписания работников"
-                                    : "Calendar aware of weekends, holidays, shifts and time zones."}
+                                    : "Takes into account the team schedule and individual deviations for each worker."}
                             </li>
-
-
                             <li>
                                 {lang === "ru"
                                     ? "Есть отчеты о загрузке и результативности сотрудников"
-                                    : "Support for retooling, inner/outer units, pinned loads."}
+                                    : "Provides reports on employee workload and performance."}
                             </li>
-
                         </ul>
                         <p className="projectTech">
                             {lang === "ru" ? "Создано на " : "Built with "}
@@ -117,13 +114,13 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                             LinguaFly —{" "}
                             {lang === "ru"
                                 ? "новый язык легко и приятно"
-                                : "language learning platform"}
+                                : "learn a new language the easy way"}
                         </h3>
                         <p className="projectText">
                             {lang === "ru"
                                 ? `Веб-платформа которая помогает закреплять правила и пополнять словарный запас в контексте коротких текстов.
                                 Включает упражнения и интерактивный тренажёр для запоминания слов. Делает регулярную практику языка лёгкой и приятной.`
-                                : "A web platform for learning languages (like Portuguese and Russian) through stories, exercises and interactive trainers. It aims to make consistent practice feel light and playful."}
+                                : "A web platform that helps you internalise grammar and grow your vocabulary through short texts. It includes exercises and an interactive word trainer that makes regular language practice light and enjoyable."}
                         </p>
                         <ul className="projectList">
                             <li>
@@ -139,24 +136,28 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                             <li>
                                 {lang === "ru"
                                     ? "Подборки слов для каждого текста, мягкая геймификация."
-                                    : "Word collections, spaced practice and gentle gamification."}
+                                    : "Curated word sets for each text and gentle gamification."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Мультиязычный интерфейс и «живой» тёплый дизайн."
-                                    : "Multi-language UI and a warm, 'alive' visual design."}
+                                    : "Multi-language UI and a warm, “alive” visual design."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Библиотека текстов постоянно пополняется."
-                                    : "Multi-language UI and a warm, 'alive' visual design."}
+                                    : "The text library is constantly growing."}
                             </li>
                             <li>
                                 {lang === "ru"
                                     ? "Гибкий уровень сложности: тексты и упражнения, рассчитанные на уровни от A1/A2 до B1/B2"
-                                    : "Multi-language UI and a warm, 'alive' visual design."}
+                                    : "Flexible difficulty: texts and exercises designed for levels from A1/A2 up to B1/B2."}
                             </li>
-                            
+                            <li>
+                                {lang === "ru"
+                                    ? "Контент создается с помощью искуственного интелекта"
+                                    : "Content is created and refined with the help of artificial intelligence."}
+                            </li>
                         </ul>
                         <p className="projectTech">
                             {lang === "ru" ? "Создано на " : "Built with "}
@@ -166,8 +167,7 @@ export const Projects: React.FC<Props> = ({ lang }) => {
                                 : "and a custom interactive learning engine."}
                         </p>
                         <a
-                            // href="https://linguafly.app"
-                            href="https://lingua-fly-zryfz.ondigitalocean.app/"
+                            href="https://lingua-fly.com"
                             target="_blank"
                             rel="noreferrer"
                             className="btn secondary projectBtn"
