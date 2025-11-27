@@ -233,7 +233,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  padding: 0.33rem 0.95rem; /* было 0.45rem 0.9rem */
+  padding: 0.33rem 0.95rem;
+  /* было 0.45rem 0.9rem */
   line-height: 1;
 
   border-radius: 999px;
@@ -294,7 +295,8 @@ body {
   background: var(--bg-elevated);
   font-size: 0.78rem;
   /* было 0.25 / 0.75 / 0.25 / 0.45 */
-  padding: 0.33rem 0.85rem 0.33rem 0.55rem; /* 👈 чуть больше по вертикали и по ширине */
+  padding: 0.33rem 0.85rem 0.33rem 0.55rem;
+  /* 👈 чуть больше по вертикали и по ширине */
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -344,9 +346,12 @@ body {
   top: calc(100% + 0.35rem);
   right: 0;
   /* было min-width: 150px; */
-  min-width: 120px;              /* 👈 уже */
-  padding: 0.25rem 0.3rem;       /* чуть меньше внутренний отступ */
-  border-radius: 12px;           /* можно чуть меньше радиус */
+  min-width: 120px;
+  /* 👈 уже */
+  padding: 0.25rem 0.3rem;
+  /* чуть меньше внутренний отступ */
+  border-radius: 12px;
+  /* можно чуть меньше радиус */
   background: var(--bg-elevated);
   border: 1px solid var(--border-subtle);
   box-shadow: var(--shadow-soft);
@@ -370,8 +375,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.4rem;             /* было 0.5rem */
-  padding: 0.25rem 0.4rem; /* было 0.35rem 0.5rem */
+  gap: 0.4rem;
+  /* было 0.5rem */
+  padding: 0.25rem 0.4rem;
+  /* было 0.35rem 0.5rem */
   border-radius: 10px;
   font-size: 0.8rem;
   cursor: pointer;
@@ -771,7 +778,8 @@ body {
   font-size: 0.9rem;
   outline: none;
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
-    background var(--transition-fast);
+  background var(--transition-fast);
+  resize: vertical; 
 }
 
 .formField input::placeholder,

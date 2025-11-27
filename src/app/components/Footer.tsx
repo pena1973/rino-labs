@@ -19,22 +19,22 @@ export const Footer: React.FC<Props> = ({ lang }) => {
         </p>
         <div className="footerLinks">
           {/* TODO: заменить на реальные ссылки */}
-          <a
+          {/* <a
             href="https://github.com/rinolabs-placeholder"
             target="_blank"
             rel="noreferrer"
           >
             GitHub
-          </a>
+          </a> */}
           <a
-            href="https://www.linkedin.com/in/rinolabs-placeholder"
+            href="https://www.linkedin.com/in/natalia-barinova-5221b3106/"
             target="_blank"
             rel="noreferrer"
           >
             LinkedIn
           </a>
           <a
-            href="https://t.me/rinolabs_placeholder"
+            href="https://t.me/RinoLabs"
             target="_blank"
             rel="noreferrer"
           >
