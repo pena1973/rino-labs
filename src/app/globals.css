@@ -879,6 +879,7 @@ body {
   .navLinks {
     gap: 0.9rem;
     font-size: 0.82rem;
+     flex-wrap: wrap;
   }
 
   .section {
