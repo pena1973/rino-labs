@@ -10,6 +10,11 @@ WORKDIR /app
 
 ENV NEXT_TELEMETRY_DISABLED=1
 
+# Build-time placeholders.
+# Real values are passed at runtime through /opt/demos/infra/envs/rino-labs.env
+ENV RESEND_API_KEY=re_build_time_placeholder
+ENV MAIL_TO=build@example.com
+
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
